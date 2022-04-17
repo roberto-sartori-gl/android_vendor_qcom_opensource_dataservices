@@ -33,7 +33,7 @@ librmnetctl_defaults_pre_uplink {
 
 cc_library_shared {
     name: "librmnetctl",
-    header_libs: ["generated_kernel_headers"],
+    header_libs: ["device_kernel_headers"],
     defaults: ["librmnetctl_defaults", "librmnetctl_pre_uplink"],
     srcs: ["src/librmnetctl.c"],
 }
